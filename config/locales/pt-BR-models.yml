@@ -1,0 +1,28 @@
+en:
+  activerecord:
+    models:
+      cdz:
+        one: cdz
+        other: cdzs
+      especialidade:
+        one:  specialty
+        other:  specialtys
+    attributes:
+      cdz:
+        id: Código
+        nome: name
+        Costelação: Sigla
+        Idade: old
+        Foto:  Image
+        especialidade: specialty
+        mining_type_id:  specialty
+        update_at: Atualizado em
+        created_at: Criado em
+      especialidade:
+        id: Código
+        nome: name
+        idade: old
+        update_at: Atualizado em
+        created_at: Criado em
+     
+     

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cdz.nome %>
+</p>
+
+<p>
+  <strong>Costelação:</strong>
+  <%= @cdz.costelação %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @cdz.idade %>
+</p>
+
+<p>
+  <strong>Foto:</strong>
+ 
+  <%= image_tag @cdz.foto, size:"500x500" %>
+</p>
+
+<%= link_to 'Edit', edit_cdz_path(@cdz) %> |
+<%= link_to 'Back', cdzs_path %>

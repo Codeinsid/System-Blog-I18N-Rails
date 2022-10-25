@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  costelação: MyString
+  idade: 1
+  foto: MyString
+
+two:
+  nome: MyString
+  costelação: MyString
+  idade: 1
+  foto: MyString

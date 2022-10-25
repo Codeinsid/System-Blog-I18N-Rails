@@ -1,0 +1,20 @@
+<p>
+    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+    <%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
+<h1>Cavaleiros de ouro</h1>
+
+<p>O idioma usado nessa aplicação é: <%= locale %></p>
+
+<!--<p>Data: <%#= Date.today.strftime("%d/%m/%Y ")  %></p>  -- colocando data no formato br no arquivo direto -->
+Data: <%= l(Date.today) %> <!-- locando data pelo helper usando metodo -->
+
+
+<%= render "menu" %>  
+
+
+
+

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Especialidades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= @especialidades.human_attribute_name(:poder)%></th>
+      <th><%= @especialidades.human_attribute_name(:Tipos)%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @especialidades.each do |especialidade| %>
+      <tr>
+        <td><%= especialidade.poder %></td>
+        <td><%= especialidade.tipo %></td>
+        <td><%= link_to t('links.Show'), especialidade %></td>
+        <td><%= link_to t('links.Edit'), edit_especialidade_path(especialidade) %></td>
+        <td><%= link_to t('links.Destroy'), especialidade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Especialidade', new_especialidade_path %>

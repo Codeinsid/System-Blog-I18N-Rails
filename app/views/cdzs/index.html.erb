@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+DATA: <%= data_br(Date.today) %>
+
+<h1>Cdzs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> <%= @cdzs.human_attribute_name(:nome)%> </th>
+      <th><%= @cdzs.human_attribute_name(:Costelação)%> </th>
+      <th><%= @cdzs.human_attribute_name(:Idade)%> </th>
+      <th> <%= @cdzs.human_attribute_name(:Foto)%> </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cdzs.each do |cdz| %>
+      <tr>
+        <td><%= cdz.nome %></td>
+        <td><%= cdz.costelação %></td>
+        <td><%= cdz.idade %></td>
+        <td><%= image_tag cdz.foto, size:"150x150" %></td>
+        <td><%= link_to t('links.Show'), cdz %></td>
+        <td><%= link_to t('links.Edit'), edit_cdz_path(cdz) %></td>
+        <td><%= link_to t('links.Delete'), cdz, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cdz', new_cdz_path %>

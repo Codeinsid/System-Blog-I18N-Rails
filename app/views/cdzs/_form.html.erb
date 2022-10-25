@@ -1,0 +1,45 @@
+<%= form_with(model: cdz, local: true) do |form| %>
+  <% if cdz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cdz.errors.count, "error") %> prohibited this cdz from being saved:</h2>
+
+      <ul>
+      <% cdz.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :costelação %>
+    <%= form.text_field :costelação %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idade %>
+    <%= form.number_field :idade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_field :foto %>
+    <%#= image_tag cdz.foto, size:"150x150" %> <!--codigo ruby -->
+  </div>
+  
+  <div class="field">
+    <%= form.label :especialidade_id %>
+    <%= form.select("especialidade_id", @especialidade_options, { include_blank: 'Selecione..' }) %>
+    
+    
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
