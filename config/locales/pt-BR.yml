@@ -1,7 +1,29 @@
 pt-BR:
+    current_locale: "Português do Brasil"
+    cdz: "Cavaleiros de Ouro"
+    messages:
+      welcome: "aqui você cadastra os cavaleiros de ouro"
+      menu: "Para começar, selecione uma das opções abaixo:"
+      confirm: "Tem certeza?"
     hello: "Ola Mundo!"
     links:
-      Edit: "Editar"
-      Show: "Mostrar"
-      Delete: "Deletar"
+      edit: "Editar"
+      show: "Mostrar"
+      delete: "Deletar"
+      new specialty: "Nova especialidade"
+      new: "Novo"
+      back: "Voltar"
+    new:
+      cdz: "Cadastrar cavaleiro"
+      specialty: "cadastrar especialidade"
+      especialidade: "Nova Especialidade"
+    editing:
+      cdz: "Editando cavaleiro"
+      specialty: "Editando especialidade"
+    showing:
+      cdz: "Mostrando Cavaleiro"
+      specialty: "Mostrando especialidade"
+    especialidade:
+      poder: "Poder"
+      tipo: "Tipo"
       

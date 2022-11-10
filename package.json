@@ -1,5 +1,15 @@
 {
   "name": "cavaleiro",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "notify-js-legacy": "^0.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Codeinsid/Crypton-Moedas.v1.git",
+  "license": "MIT"
 }

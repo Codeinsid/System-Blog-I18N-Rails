@@ -2,8 +2,8 @@ en:
   activerecord:
     models:
       cdz:
-        one: cdz
-        other: cdzs
+        one: knight
+        other: knights
       especialidade:
         one:  specialty
         other:  specialtys
@@ -15,6 +15,7 @@ en:
         Idade: old
         Foto:  Image
         especialidade: specialty
+        especialidade_id: specialty
         mining_type_id:  specialty
         update_at: Atualizado em
         created_at: Criado em
@@ -24,5 +25,7 @@ en:
         idade: old
         update_at: Atualizado em
         created_at: Criado em
+        poder: Power
+        Tipos: Type
      
      

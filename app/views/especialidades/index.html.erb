@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Especialidades</h1>
+<h1><%= Especialidade.model_name.human(count: @especialidades.count) %></h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @especialidades.human_attribute_name(:poder)%></th>
@@ -14,11 +14,11 @@
   <tbody>
     <% @especialidades.each do |especialidade| %>
       <tr>
-        <td><%= especialidade.poder %></td>
-        <td><%= especialidade.tipo %></td>
-        <td><%= link_to t('links.Show'), especialidade %></td>
-        <td><%= link_to t('links.Edit'), edit_especialidade_path(especialidade) %></td>
-        <td><%= link_to t('links.Destroy'), especialidade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= t('especialidade.poder') %></td>
+        <td><%= t('especialidade.tipo') %></td>
+        <td><%= link_to t('links.show'), especialidade, class: "btn btn-primary" %></td>
+        <td><%= link_to t('links.edit'), edit_especialidade_path(especialidade),  class: "btn btn-primary" %></td>
+        <td><%= link_to t('links.destroy'), especialidade, method: :delete, data: { confirm: t('messages.confirm'), },  class: "btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Especialidade', new_especialidade_path %>
+<%= link_to t('new.specialty'), new_especialidade_path, class: "btn btn-primary" %>

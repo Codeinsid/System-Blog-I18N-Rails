@@ -1,7 +1,7 @@
-<h1>Editing Cdz</h1>
+<h1><%= t('editing.cdz') %></h1>
 
 <%= render 'form', cdz: @cdz %>
 
 
-<%= link_to 'Show', @cdz %> |
-<%= link_to 'Back', cdzs_path %>
+<%= link_to t('links.show'), @cdz, class:"btn btn-primary" %> 
+<%= link_to t('links.back'), cdzs_path, class:"btn btn-primary" %>

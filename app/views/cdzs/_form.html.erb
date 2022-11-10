@@ -11,35 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.text_field :nome,class:"form-control", placeholder:"Cavaleiro" %>
   </div>
+  
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :costelação %>
-    <%= form.text_field :costelação %>
+    <%= form.text_field :costelação, class:"form-control", placeholder:"Protetor" %> 
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :idade %>
-    <%= form.number_field :idade %>
+    <%= form.number_field :idade, class:"form-control", placeholder:"Anos" %> 
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :foto %>
-    <%= form.text_field :foto %>
+    <%= form.text_field :foto, class:"form-control", placeholder:"http://img.url" %>
     <%#= image_tag cdz.foto, size:"150x150" %> <!--codigo ruby -->
   </div>
   
-  <div class="field">
+  <div class="form-group">
     <%= form.label :especialidade_id %>
-    <%= form.select("especialidade_id", @especialidade_options, { include_blank: 'Selecione..' }) %>
+    <%= form.select("especialidade_id", @especialidade_options, { include_blank: 'Selecione..' }, class:"form-control") %>
     
     
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, class:"btn btn-primary" %>
   </div>
 <% end %>
+
+
+</br>

@@ -1,6 +1,6 @@
-<h1>Editing Especialidade</h1>
+<h1><%= t('Editing.Especialidade') %></h1>
 
 <%= render 'form', especialidade: @especialidade %>
 
-<%= link_to 'Show', @especialidade %> |
-<%= link_to 'Back', especialidades_path %>
+<%= link_to 'Show', @especialidade,  class: "btn btn-primary" %> 
+<%= link_to 'Back', especialidades_path,  class: "btn btn-primary" %>

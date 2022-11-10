@@ -1,7 +1,29 @@
 en:
-  hello: "Hello world"
-  links:
-    Edita: "Edit"
-    Mostrar: "Show"
-    Destruir: "Delete"
+    current_locale: "English(International)"
+    cdz: "Golden Knights"
+    messages:
+      welcome: "here you register the golden knights"
+      menu: "To get started, select one of the options below:"
+    hello: "Ola Mundo!"
+    links:
+      edit: "Edit"
+      show: "Show"
+      delete: "Delete"
+      new specialty: "New specialty"
+      new: "new"
+      back: "back"
+    new:
+      cdz: "New knight"
+      specialty: "new specialty"
+      especialidade: "new especialty"
+    editing:
+      cdz: "Editing knight"
+      specialty: "Editing specialty"
+    Showing:
+      cdz: "showing knight"
+      specialty: "Showing specialty"
+    especialidade:
+      poder: "power"
+      tipo: "Type"
+        
     

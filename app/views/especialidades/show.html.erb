@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Poder:</strong>
-  <%= @especialidade.poder %>
-</p>
+<form>
+  <div class="form-group">
+    <%= label_tag nil, @especialidade.class.human_attribute_name(:poder) %>
+    <%= text_field_tag nil, @especialidade.poder, class:"form-control", disabled:true %>
+  </div>
+  
 
-<p>
-  <strong>Tipo:</strong>
-  <%= @especialidade.tipo %>
-</p>
+  <div class="form-group">
+    <%= label_tag nil, @especialidade.class.human_attribute_name(:tipo) %>
+    <%= text_field_tag nil, @especialidade.tipo , class:"form-control", disabled:true %>  
+  </div>
 
-<%= link_to 'Edit', edit_especialidade_path(@especialidade) %> |
-<%= link_to 'Back', especialidades_path %>
+
+</form>
+
+<%= link_to 'Edit', edit_especialidade_path(@especialidade), class:"btn btn-primary" %> |
+<%= link_to 'Back', especialidades_path, class:"btn btn-primary" %>

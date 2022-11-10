@@ -1,25 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @cdz.nome %>
-</p>
+<form>
+  <div class="form-group">
+    <%= label_tag nil, @cdz.class.human_attribute_name(:nome) %>
+    <%= text_field_tag nil, @cdz.nome, class:"form-control", disabled:true %>
+  </div>
+  
 
-<p>
-  <strong>Costelação:</strong>
-  <%= @cdz.costelação %>
-</p>
+  <div class="form-group">
+    <%= label_tag nil, @cdz.class.human_attribute_name(:costelação) %>
+    <%= text_field_tag nil, @cdz.costelação , class:"form-control", disabled:true %>  
+  </div>
 
-<p>
-  <strong>Idade:</strong>
-  <%= @cdz.idade %>
-</p>
+  <div class="form-group">
+    <%= label_tag nil, @cdz.class.human_attribute_name(:idade) %>
+    <%= text_field_tag nil, @cdz.idade , class:"form-control", disabled:true   %>
+   </div>
+   
+  <div class="form-group">
+    <%= label_tag nil, @cdz.class.human_attribute_name(:foto) %>
+    <%= text_field_tag nil, @cdz.foto , class:"form-control", disabled:true %>
+   </div>
+   
+    <div class="form-group">
+    <%= label_tag nil, @cdz.class.human_attribute_name(:especialidade) %>
+    <%= text_field_tag nil, @cdz.especialidade.tipo , class:"form-control", disabled:true %>
+   </div>
+   
+    
 
-<p>
-  <strong>Foto:</strong>
- 
-  <%= image_tag @cdz.foto, size:"500x500" %>
-</p>
 
-<%= link_to 'Edit', edit_cdz_path(@cdz) %> |
-<%= link_to 'Back', cdzs_path %>
+</form>
+
+<%= link_to 'Edit', edit_cdz_path(@cdz),class:"btn btn-primary"  %> |
+<%= link_to 'Back', cdzs_path,class:"btn btn-primary"  %>

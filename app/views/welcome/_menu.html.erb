@@ -1,10 +1,4 @@
-<ul><strong><p>Construção</p></strong></ul>
+<%= link_to "#{Cdz.model_name.human}", cdzs_path, class:"btn btn-primary btn-lg" %>
 
-<ul>
-    <li>
-        <%= link_to "Cavaleiros de ouro", cdzs_path %>
-    </li>
-        <li>
-        <%= link_to "Cadastrar tipos de especialidadades", especialidades_path %>
-    </li>
-</ul>
+<%= link_to "#{Especialidade.model_name.human}", especialidades_path, class:"btn btn-primary btn-lg" %>
+   

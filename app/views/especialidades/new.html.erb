@@ -1,5 +1,5 @@
-<h1>New Especialidade</h1>
+<h1><%= t('new.especialidade') %></h1>
 
-<%= render 'form', especialidade: @especialidade %>
+<%= render 'form', especialidade: @especialidade,  class: "btn btn-primary" %>
 
-<%= link_to 'Back', especialidades_path %>
+<%= link_to 'Back', especialidades_path,  class: "btn btn-primary" %>

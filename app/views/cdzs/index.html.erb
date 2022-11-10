@@ -2,9 +2,9 @@
 
 DATA: <%= data_br(Date.today) %>
 
-<h1>Cdzs</h1>
+<h1><%= Cdz.model_name.human(count: @cdzs.count) %></h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th> <%= @cdzs.human_attribute_name(:nome)%> </th>
@@ -22,9 +22,9 @@ DATA: <%= data_br(Date.today) %>
         <td><%= cdz.costelação %></td>
         <td><%= cdz.idade %></td>
         <td><%= image_tag cdz.foto, size:"150x150" %></td>
-        <td><%= link_to t('links.Show'), cdz %></td>
-        <td><%= link_to t('links.Edit'), edit_cdz_path(cdz) %></td>
-        <td><%= link_to t('links.Delete'), cdz, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to t('links.show'), cdz,  class:"btn btn-primary" %></td>
+        <td><%= link_to t('links.edit'), edit_cdz_path(cdz), class:"btn btn-primary" %></td>
+        <td><%= link_to t('links.delete'), cdz, method: :delete, data: { confirm: t('messages.confirm'), }, class:"btn btn-primary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@ DATA: <%= data_br(Date.today) %>
 
 <br>
 
-<%= link_to 'New Cdz', new_cdz_path %>
+<%= link_to t('new.cdz'), new_cdz_path, class:"btn btn-primary" %>
