@@ -1,6 +1,6 @@
 ## Thiago almeida
 
-Game system that generates number and asked the user to try to guess the number.
+Register gold knights with their photo ability and fight type
 
 ## The App
 
