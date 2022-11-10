@@ -1,5 +1,5 @@
 ## Thiago almeida
-This is my project with 'I18N' 'internationalization' \o/ 
+This is my blog with 'I18N' 'internationalization' \o/ 
 Enjoy It and I hope you can learn a lot!
 
 
