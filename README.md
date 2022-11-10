@@ -50,6 +50,4 @@ Here are the technologies used in this project.
 * To run the project.
   - rails s
 
-  Please follow github and join us!
-  Thanks to visiting me and good coding!
 
