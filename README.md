@@ -1,7 +1,11 @@
 ## Thiago almeida
-This is my blog with 'I18N' 'internationalization' \o/ 
+This is 'knights of the zodiac blog' with 'I18N' 'internationalization' \o/ 
 Enjoy It and I hope you can learn a lot!
 
+## The App
+
+register gold knights with a linked photo and
+the type of character's ability.
 
 ## Technology 
 
