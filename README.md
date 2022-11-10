@@ -23,6 +23,7 @@ Here are the technologies used in this project.
 *-tty-spinner
 *-pry-rails
 *-rails-i18n
+*-Webpacker
 
 ## Getting started
 
