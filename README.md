@@ -1,10 +1,10 @@
 ## Thiago almeida
-This is 'knights of the zodiac blog' with 'I18N' 'internationalization' \o/ 
-Enjoy It and I hope you can learn a lot!
+
+Game system that generates number and asked the user to try to guess the number.
 
 ## The App
 
-register gold knights with a linked photo and
+Register 'Gold knights' with a linked photo and
 the type of character's ability.
 
 ## Technology 
