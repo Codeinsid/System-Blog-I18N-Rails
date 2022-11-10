@@ -19,11 +19,10 @@ Here are the technologies used in this project.
 
 ## Ruby Gems
 
-* Devise
-* Bootstrap
-* Select2
-
-
+*-bootsnap
+*-tty-spinner
+*-pry-rails
+*-rails-i18n
 
 ## Getting started
 
