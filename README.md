@@ -1,24 +1,54 @@
-# README
+## Thiago almeida
+This is my project with 'I18N' 'internationalization' \o/ 
+Enjoy It and I hope you can learn a lot!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Technology 
 
-* Ruby version
+Here are the technologies used in this project.
 
-* System dependencies
+* Ruby version  2.6.10
+* Rails version 5.2
+* PostgreSQL/sqlite
+* Webpacker
 
-* Configuration
+## Services Used
 
-* Database creation
+* Github
+* Heroku
 
-* Database initialization
+## Ruby Gems
 
-* How to run the test suite
+* Devise
+* Bootstrap
+* Select2
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Getting started
+
+* Dependency
+  - Ruby  
+  - Rails
+
+* To create and build your database accord of the project.
+* - rake yarn install
+  - rake db:create db:migrate
+  
+* To create the previous files to use on the project, on the database.
+  - rake db:seed 
+  - 
+* To install the yarn
+* - yarn install
+* To install the gems.
+  - bundle install
+
+
+  
+* To run the project.
+  - rails s
+
+
+  Please follow github and join us!
+  Thanks to visiting me and good coding!
+
